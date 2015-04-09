@@ -1,4 +1,13 @@
 <?php
+//example of a the swaper with the data reciever
+
+session_start();
+$_SESSION['i']++;//increment the counter for sub-data
+//$i=$_SESSION['i'];
+//echo $i;//increment tester
+
+
+
 if (isset($_POST['contentVar']) && $_POST['contentVar']!=''){
     $v=$_POST['contentVar'];
 }
