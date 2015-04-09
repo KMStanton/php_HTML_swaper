@@ -6,8 +6,9 @@ if (empty($pass_var)) {
 
 function div_swap($link_text, $div_target, $loader, $pass_var)
 {
-    global $link_text, $div_target, $loader, $pass_var, $i;
-    $i++;
+//    global $link_text, $div_target, $loader, $pass_var;
+    $_SESSION['i']++;
+    $i = $_SESSION['i']; //generic increment holder
 
 
     echo "<a href='#' onclick='return false' onmousedown='javascript:swapContent$i($pass_var)'>$link_text</a>
