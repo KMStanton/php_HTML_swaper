@@ -1,5 +1,7 @@
 <?php
-$i=0; //generic increment holder
+if (!isset($_SESSION['i']) || $_SESSION['i']==''){
+    $_SESSION['i'] = '0';
+} //generic increment holder
 include_once"load_content.php";
 
 //exampel 1
